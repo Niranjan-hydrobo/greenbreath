@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="gb.png" alt="Green Breath Logo" class="logo">
+        <h1>Carbon Footprint Calculator</h1>
+        
+        <div class="button-container">
+            <button onclick="showSection('calculator')">Calculate Your Carbon Footprint</button>
+            <button onclick="showSection('tips')">Tips to Reduce Carbon Footprint</button>
+            <button onclick="showSection('rewards')">Green Breath Credits</button>
+            <button onclick="showSection('coming-soon')">AI-Based Personal Tracker</button>
+        </div>
+        
+        <div id="calculator" class="section" style="display:none;">
+            <h2>Calculate Your Carbon Footprint</h2>
+            <form id="calculator-form">
+                <label for="miles_driven">Miles Driven by Personal Vehicle per Week:</label>
+                <input type="number" id="miles_driven" required placeholder="e.g., 150">
+                
+                <label for="public_transport">Public Transport Trips per Week:</label>
+                <input type="number" id="public_transport" required placeholder="e.g., 5">
+                
+                <label for="electricity_usage">Monthly Electricity Usage (kWh):</label>
+                <input type="number" id="electricity_usage" required placeholder="e.g., 300">
+                
+                <label for="food_waste">Food Waste per Week (lbs):</label>
+                <input type="number" id="food_waste" required placeholder="e.g., 2">
+                
+                <button type="submit">Calculate</button>
+            </form>
+            <h3 id="result" style="display:none;"></h3>
+        </div>
+        
+        <div id="tips" class="section" style="display:none;">
+            <h2>Tips to Reduce Carbon Footprint</h2>
+            <ul>
+                <li>Use public transport, carpool, or bike.</li>
+                <li>Switch to LED bulbs and energy-efficient appliances.</li>
+                <li> Recycle and Compost:Reduce, reuse, and recycle.</li>
+                <li>Compost organic waste.</li>
+                <li>Choose local and sustainable products.</li>
+                <li>Bike or Walk: For short distances, choose biking or walking.</li>
+                <li>Limit Water Use: Take shorter showers and fix leaks.</li>
+                <li>And much more!!</li>
+            </ul>
+        </div>
+        
+        <div id="rewards" class="section" style="display:none;">
+            <h2>Breath Coins</h2>
+            <p>Track your points for reducing your footprint!</p>
+            <p>Earn Breath Coins and Make a Difference! Join us on a journey to reduce your carbon footprint while earning rewards that matter. Our unique Breath Coins system allows you to turn your eco-friendly actions into valuable rewards!</p>
+            <p><strong>1. Earn Breath Coins</strong><br>
+                Track Your Carbon Footprint: Reduce your carbon emissions by using public transport, biking, or conserving energy. For every eco-friendly action, earn breath coins!<br>
+                Convert Cash to Breath Coins: Easily convert your cash into breath coins at a favorable exchange rate. The more you invest in your sustainability, the more rewards you earn!<br>
+                Charge at Hydrobo Stations: Every time you charge your electric vehicle at a Hydrobo station, you’ll receive breath coins. Charge up and earn rewards!</p>
+            <p><strong>2. Spend Your Breath Coins</strong><br>
+                Shop at Sustainable Stores: Use your breath coins at our partnered eco-friendly stores for discounts and special offers. Support sustainable businesses while enjoying your rewards!<br>
+                Invest in Bitcoin: Choose to invest your breath coins in Bitcoin or other cryptocurrencies, combining sustainability with smart investing.</p>
+            <p><strong>Engage and Compete</strong><br>
+                Leaderboards and Challenges: Join our community and participate in challenges to see how you rank against others. Compete to earn extra breath coins!<br>
+                Share Your Achievements: Show off your eco-friendly lifestyle! Share your progress on social media and inspire others to join the movement.</p>
+        </div>
+        
+        <div id="coming-soon" class="section" style="display:none;">
+            <h2>Coming Soon!...</h2>
+            <p><strong>Track Your Impact</strong><br>
+                Personal Dashboard: Monitor your carbon footprint, breath coins earned, and your spending history all in one place. Stay motivated as you see your positive impact grow!</p>
+            <p><strong>Join Us Today!</strong><br>
+                Ready to start earning breath coins? Sign up now and begin your journey toward a sustainable future. Together, we can make a difference!</p>
+            <p>More features will be available soon. Stay tuned!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
